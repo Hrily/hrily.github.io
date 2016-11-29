@@ -70,6 +70,27 @@ body {
 	opacity: 0;
 }
 
+#header {
+	 position:absolute; 
+	 top: 15vh;
+}
+
+#header img {
+	width: 8vw; 
+	max-width: 40px;
+	padding: 10%;
+	margin-top: 20%;
+}
+
+#header .col, #header .row, #header h3, #header h5{
+	padding: 0;
+	margin: 0;
+}
+
+#header h5 {
+	margin-top: 2vh;
+}
+
 .expandable-container {
 	position: relative;
 	border-radius: 1px;
@@ -135,6 +156,11 @@ body {
 
 	.mcontainer {
 		width: 100%;
+	}
+
+	#header {
+		top: 4vh;
+		padding: 5%;
 	}
 
 	.logo {
