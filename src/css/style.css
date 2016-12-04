@@ -2,7 +2,6 @@ body {
 	margin: 0;
     background-color: #282f57;
     text-align: center;
-    padding-top: 65%;
 }
 
 .mcontainer {
@@ -107,6 +106,10 @@ body {
 #header .col, #header .row, #header h3, #header h5, .page-footer .col, .page-footer .row{
 	padding: 0;
 	margin: 0;
+}
+
+#welcome {
+	margin-top: 60vh !important;
 }
 
 #header h5 {
