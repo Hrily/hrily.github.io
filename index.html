@@ -9,30 +9,38 @@
 </head>
 <body onload="show()">
 
-	<div class="back-panel"></div>
-
 	<!-- SideNav -->
-	<ul id="slide-out" class="side-nav">
+	<ul id="slide-out" class="side-nav left-align">
 	<!-- TODO: Change Nav links and images -->
 		<li>
 			<div class="userView">
 				<div class="background">
-					<img src="images/office.jpg">
+					<img src="images/nav_bg.png">
 				</div>
-				<a href="#!user"><img class="circle" src="images/hrishi.jpg"></a>
-				<span class="white-text name">Hrishi Hiraskar</span></a>
-				<a href="mailto:hrishihirakar@gmail.com"><span class="white-text email">hrishihiraskar@gmail.com</span></a>
+				<a href="https://hrily.github.io/Resume">
+					<img class="circle" src="images/hrishi_dp.jpg"></a>
+					<span class="white-text name">Hrishi Hiraskar</span></a>
+					<a href="mailto:hrishihirakar@gmail.com"><span class="white-text email">hrishihiraskar@gmail.com</span>
+				</a>
 			</div>
 		</li>
-		<li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
-		<li><a href="#!">Second Link</a></li>
+		<li><a href="#web">Web</a></li>
+		<li><a href="#app">Apps</a></li>
+		<li><a href="#opensource">Open Source Contributions</a></li>
+		<li><a href="#design">Design</a></li>
+		<li><a href="#python">Python</a></li>
+		<li><a href="#cp">Competitive Programming</a></li>
+		<li><a href="#ml">Machine Learning</a></li>
+		<li><a href="#cpp">C++</a></li>
 		<li><div class="divider"></div></li>
-		<li><a class="subheader">Subheader</a></li>
-		<li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+		<li><a class="subheader">Other Links</a></li>
+		<li><a href="personalizations.html">Personalizations</a></li>
+		<li><a href="https://hrily.github.io/Resume">Resume</a></li>
+		<li><a href="https://www.facebook.com/hrilyscreens">HriyScreens</a></li>
 	</ul>
 
-	<!-- Nav Icon -->
-	<a href="#" id="menu-btn" data-activates="slide-out" class="button-collapse">
+	<!-- Nav Links -->
+	<a href="#!" id="menu-btn" data-activates="slide-out" class="button-collapse">
 		<i class="material-icons">menu</i>
 	</a>
 
@@ -55,6 +63,7 @@
 	<!--                             Content                             -->
 	<!-- ############################################################### -->
 
+	<!-- Welcome Content -->
 	<div class="mcontainer">
 		<div class="card">
 			<div class="card-content">
@@ -63,20 +72,330 @@
 						<img src="images/logo_fb.png" class="circle responsive-img center-align valign">
 					</div>
 					<div class="col s10">
-						<h5>Welcome</h5>
-						This is a square image. Add the "circle" class to it to make it appear circular.
+						<h4>Welcome</h4>
+						This is the welcome content...
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<script type="text/javascript" src="src/js/script.js"></script>
-	<link rel="stylesheet" type="text/css" href="src/css/style.css">
+	<!-- WEB -->
+	<div id="web" class="mcontainer">
+		<div class="card">
+			<div class="card-content">
+				<h4>&lt;Web/&gt;</h4>
+				<p style="opacity: 0.8;">&lt;HTML&gt;, {CSS}, JavaScript()...</p>
+				<br>
+				<div class="row">
+					<div class="col s12 m4 l4">
+						<a class="btn waves-effect waves-light pink" onclick="expand_handler(event, 'Carousel')">Carousel</a>
+					</div>
+					<div class="col s12 m4 l4">
+						<a class="btn waves-effect waves-light indigo" onclick="expand_handler(event, 'ClassOL')">Class OL</a>
+					</div>
+					<div class="col s12 m4 l4">
+						<a class="btn waves-effect waves-light teal" onclick="expand_handler(event, 'MaterialRippleTransition')">Material Ripple Transition</a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col s12 m4 l4">
+						<a class="btn waves-effect waves-light blue" onclick="expand_handler(event, 'ModalEffects')">Modal Effects</a>
+					</div>
+					<div class="col s12 m4 l4">
+						<a class="btn waves-effect waves-light red" onclick="expand_handler(event, 'MyPage')">My Page</a>
+					</div>
+					<div class="col s12 m4 l4">
+						<a class="btn waves-effect waves-light blue-grey" onclick="expand_handler(event, 'WORWebsite')">WOR Website</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- APP -->
+	<div id="app" class="carousel-container green">
+		<h3 class="center-align white-text">Apps</h3>
+		<h5 class="center-align white-text" style="opacity: 0.8;">
+			<i class="material-icons">android</i>
+			&nbsp; I Love Android &nbsp;
+			<i class="material-icons">android</i>
+		</h5>
+		<a class="btn-floating btn-large waves-effect waves-light white z-depth-4" href="javascript:$('.carousel').carousel('prev');" style="left: 20px;"><i class="large material-icons green-text">chevron_left</i></a>
+		<a class="btn-floating btn-large waves-effect waves-light white z-depth-4" href="javascript:$('.carousel').carousel('next');" style="right: 20px"><i class="large material-icons green-text">chevron_right</i></a>
+		<div class="carousel">
+			<a class="carousel-item" onclick="expand_handler(event, 'BlackJack')">
+				<img class="sc" src="images/sc_blackjack.jpg">
+				<div class="ic-container">
+					<img class="ic" src="images/ic_blackjack.png">
+					<p class="white-text">BlackJack</p>
+				</div>
+			</a>
+			<a class="carousel-item" onclick="expand_handler(event, 'MemoryGame')">
+				<img class="sc" src="images/sc_memory.jpg">
+				<div class="ic-container">
+					<img class="ic" src="images/ic_memory.png">
+					<p class="white-text">Memory Game</p>
+				</div>
+			</a>
+			<a class="carousel-item" onclick="expand_handler(event, 'NotesNearby')">
+				<img class="sc" src="images/sc_notesnearby.png">
+				<div class="ic-container">
+					<img class="ic" src="images/ic_notesnearby.png">
+					<p class="white-text">Notes::Nearby</p>
+				</div>
+			</a>
+			<a class="carousel-item" onclick="expand_handler(event, 'TicTacToe')">
+				<img class="sc" src="images/sc_tictactoe.png">
+				<div class="ic-container">
+					<img class="ic" src="images/ic_android.png">
+					<p class="white-text">TicTacToe</p>
+				</div>
+			</a>
+			<a class="carousel-item" onclick="expand_handler(event, 'SH')">
+				<img class="sc" src="images/sc_sh.png">
+				<div class="ic-container">
+					<img class="ic" src="images/ic_sh.png">
+					<p class="white-text">SH</p>
+				</div>
+			</a>
+			<a class="carousel-item" onclick="expand_handler(event, 'BlackJack')">
+				<img class="sc" src="images/sc_blackjack.jpg">
+				<div class="ic-container">
+					<img class="ic" src="images/ic_blackjack.png">
+					<p class="white-text">BlackJack</p>
+				</div>
+			</a>
+			<a class="carousel-item" onclick="expand_handler(event, 'MemoryGame')">
+				<img class="sc" src="images/sc_memory.jpg">
+				<div class="ic-container">
+					<img class="ic" src="images/ic_memory.png">
+					<p class="white-text">Memory Game</p>
+				</div>
+			</a>
+			<a class="carousel-item" onclick="expand_handler(event, 'NotesNearby')">
+				<img class="sc" src="images/sc_notesnearby.png">
+				<div class="ic-container">
+					<img class="ic" src="images/ic_notesnearby.png">
+					<p class="white-text">Notes::Nearby</p>
+				</div>
+			</a>
+			<a class="carousel-item" onclick="expand_handler(event, 'TicTacToe')">
+				<img class="sc" src="images/sc_tictactoe.png">
+				<div class="ic-container">
+					<img class="ic" src="images/ic_android.png">
+					<p class="white-text">TicTacToe</p>
+				</div>
+			</a>
+			<a class="carousel-item" onclick="expand_handler(event, 'SH')">
+				<img class="sc" src="images/sc_sh.png">
+				<div class="ic-container">
+					<img class="ic" src="images/ic_sh.png">
+					<p class="white-text">SH</p>
+				</div>
+			</a>
+		</div>
+	</div>
+
+	<!-- Open Source -->
+	<div id="opensource" class="mcontainer">
+		<div class="card">
+			<div class="card-content">
+				<h4>Open Source Contributions</h4>
+				<p style="opacity: 0.8;">of, by and for People...</p><br>
+				<div class="row">
+					<!-- HandCricket -->
+					<div class="col s12 m6 l6">
+						<div class="card blue-grey small">
+							<div class="card-content white-text">
+								<span class="card-title">HandCricket</span>
+								<p>A javascript version of Hand Cricket, where I contributed to the base logic.</p>
+							</div>
+							<div class="card-action">
+								<a href="#!" onclick="expand_handler(event, 'HandCricket')">View README</a>
+								<a href="https://github.com/Hrily/HandCricket">View on GitHub</a>
+							</div>
+						</div>
+					</div>
+					<!-- Hello World -->
+					<div class="col s12 m6 l6">
+						<div class="card green small">
+							<div class="card-content white-text">
+								<span class="card-title">HelloWorld</span>
+								<p>A repository where the most basic code of printing 'Hello World!' is implemented in various languages. I implemented it in WhiteSpace and Piet, under Hacktober Fest.</p>
+							</div>
+							<div class="card-action">
+								<a href="#!" onclick="expand_handler(event, 'hello-world')">View README</a>
+								<a href="https://github.com/Hrily/hello-world">View on GitHub</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<!-- MDN -->
+					<div class="col s12 m6 l6">
+						<div class="card indigo small">
+							<div class="card-content white-text">
+								<span class="card-title">Web Extensions Examples - MDN</span>
+								<p>A Mozilla Developer Network repo. Under Hacktober Fest, I contributed by solving an <a class="orange-text" href="https://github.com/mdn/webextensions-examples/issues/115">issue</a>.</p>
+							</div>
+							<div class="card-action">
+								<a href="#!" onclick="expand_handler(event, 'webextensions-examples')">View README</a>
+								<a href="https://github.com/Hrily/webextensions-examples">View on GitHub</a>
+							</div>
+						</div>
+					</div>
+					<!-- Xcos on Web -->
+					<div class="col s12 m6 l6">
+						<div class="card red small">
+							<div class="card-content white-text">
+								<span class="card-title">Xcos on Web</span>
+								<p>An online version of the open source graphic simulator available with Scilab. My contribution was Revamping the server and Dynamic plotting of Graphical Simulation.</p>
+							</div>
+							<div class="card-action">
+								<a href="#!" onclick="expand_handler(event, 'xcos-on-web')">View README</a>
+								<a href="https://github.com/Hrily/xcos-on-web">View on GitHub</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Design -->
+	<div id="design" class="design blue-grey"><div class="mcontainer white-text">
+		<h3>Design</h3>
+		<h5 style="opacity: 0.7;">Coz it's in my blood...</h5><br>
+		<div class="row">
+			<div class="col s12 l8 m8 valign-wrapper">
+				<div class="image valign-wrapper white">
+					<img class="materialboxed valign" src="images/ic_quince.jpg">
+					<span class="overlay white-text">Quince</span>
+				</div>
+			</div>
+			<div class="col s12 l4 m4">
+				<div class="image valign-wrapper grey darken-2 darken-2">
+					<img class="materialboxed valign" src="images/ic_notesnearby.png">
+					<span class="overlay white-text">Notes::Nearby</span>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s12 l4 m4 valign-wrapper">
+				<div class="image valign-wrapper grey darken-2">
+					<img class="materialboxed valign" src="images/ic_sh.png" style="padding: 20px;">
+					<span class="overlay white-text">SH</span>
+				</div>
+			</div>
+			<div class="col s12 l8 m8">
+				<div class="image valign-wrapper green">
+					<img class="materialboxed valign" src="images/ic_wor.jpg">
+					<span class="overlay white-text">Wheels on Roll</span>
+				</div>
+			</div>
+		</div>
+	</div></div>
+
+	<!-- Python -->
+	<div id="python" class="mcontainer">
+		<div class="card">
+			<div class="card-content">
+				<h4>&gt;&gt;&gt;Python:</h4>
+				<p style="opacity: 0.8;">import language as easy</p><br>
+				<div class="row">
+					<!-- HandCricket -->
+					<div class="col s12 m6 l6">
+						<div class="card pink small">
+							<div class="card-content white-text">
+								<span class="card-title">Game of Life</span>
+								<p>Simulation of Popular Game of Life.</p>
+							</div>
+							<div class="card-action">
+								<a href="#!" onclick="expand_handler(event, 'Game-of-Life')">View README</a>
+								<a href="https://github.com/Hrily/Game-of-Life">View on GitHub</a>
+							</div>
+						</div>
+					</div>
+					<!-- Hello World -->
+					<div class="col s12 m6 l6">
+						<div class="card blue darken-1 small">
+							<div class="card-content white-text">
+								<span class="card-title">TopMusicPull</span>
+								<p>Python script to download and maintain Youtube playlist like Billboard HOT 100.</p>
+							</div>
+							<div class="card-action">
+								<a href="#!" onclick="expand_handler(event, 'TopMusicPull')">View README</a>
+								<a href="https://github.com/Hrily/TopMusicPull">View on GitHub</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Competitive Programming -->
+	<div id="cp" class="mcontainer">
+		<div class="card">
+			<div class="card-content">
+				<h4>Competetive Programming</h4>
+				<p style="opacity: 0.8;">Eat. Sleep. {Code}. Repeat.</p>
+				<br>
+				<div class="row">
+					<div class="col s12 m6 l6">
+						<a class="btn waves-effect waves-light orange" onclick="expand_handler(event, 'Codechef')">Codechef</a>
+					</div>
+					<div class="col s12 m6 l6">
+						<a class="btn waves-effect waves-light purple" onclick="expand_handler(event, 'UVa')">UVa</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- ML -->
+	<div id="ml" class="mcontainer">
+		<div class="card">
+			<div class="card-content">
+				<h4>Machine Learning</h4>
+				<p style="opacity: 0.8;">Train, Test and Validate...</p>
+				<br>
+				<div class="row">
+					<div class="col s12 m6 l6">
+						<a class="btn waves-effect waves-light grey" onclick="expand_handler(event, 'ACM-ML')">ACM ML</a>
+					</div>
+					<div class="col s12 m6 l6">
+						<a class="btn waves-effect waves-light cyan" onclick="expand_handler(event, 'TensorFlow-ML')">TensorFlow ML</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- CPP -->
+	<div id="cpp" class="mcontainer">
+		<div class="card">
+			<div class="card-content">
+				<h4>C++</h4>
+				<p style="opacity: 0.8;">#include &lt;iostream&gt;</p>
+				<br>
+				<div class="row">
+					<div class="col s12 m6 l6">
+						<a class="btn waves-effect waves-light light-green" onclick="expand_handler(event, 'FightNight')">FightNight</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Scripts and StyleSheets -->
 	<link  rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<link rel="stylesheet" type="text/css" href="src/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="src/css/style.css">
 	<script type="text/javascript" src="src/js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="src/js/materialize.min.js"></script>
+	<script type="text/javascript" src="src/js/script.js"></script>
 
 </body>
 </html>

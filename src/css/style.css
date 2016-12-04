@@ -10,16 +10,36 @@ body {
     width: 80%;
     max-width: 960px;
     text-align: left;
-    -webkit-transition: all .4s ease-in-out;
-         -o-transition: all .4s ease-in-out;
-            transition: all .4s ease-in-out;
-            margin-top: 10%;
+    -webkit-transition: opacity .4s ease-in-out, transform .4s ease-in-out, margin-top .4s ease-in-out;
+         -o-transition: opacity .4s ease-in-out, transform .4s ease-in-out, margin-top .4s ease-in-out;
+            transition: opacity .4s ease-in-out, transform .4s ease-in-out, margin-top .4s ease-in-out;
+    margin-top: 10%;
     opacity: 0;
+    visibility: hidden;
+}
+
+.mcontainer a {
+	width: 100%;
+}
+
+.ncontainer {
+	display: inline-block;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+    width: 80vw;
+    height: 80vh;
+    max-width: 960px;
+    text-align: left;
+    -webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	z-index: 101;
+	visibility: hidden;
 }
 
 .logo {
 	display: block;
-	position: absolute;
+	position: fixed;
 	top: 50%;
 	left: 50%;
 	width: 50%;
@@ -47,32 +67,34 @@ body {
 }
 
 .back-panel {
-	display: block;
-	position: absolute;
-	z-index: -1;
+    visibility: hidden;
+	position: fixed;
+	z-index: 100;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 10px;
-	background-color: #3f51b5;
-	-webkit-transition: height .4s ease-in-out;
-         -o-transition: height .4s ease-in-out;
-            transition: height .4s ease-in-out;
-    visibility: hidden;
+	height: 100%;
+	background-color: #000;
+	opacity: 0;
+	-webkit-transition: opacity .4s ease-in-out;
+         -o-transition: opacity .4s ease-in-out;
+            transition: opacity .4s ease-in-out;
 }
 
 #menu-btn {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	padding: 15px;
 	color: #fff;
 	opacity: 0;
+	z-index: 100;
+	visibility: hidden;
 }
 
 #header {
-	 position:absolute; 
-	 top: 15vh;
+	position:absolute; 
+	top: 15vh;
 }
 
 #header img {
@@ -91,11 +113,26 @@ body {
 	margin-top: 2vh;
 }
 
+.userView .background img {
+	width: 100%;
+}
+
 .expandable-container {
-	position: relative;
 	border-radius: 1px;
 	width: 100%;
-	height: 600px;
+	height: 100%;
+}
+
+.expandable-container .progress {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0;
+	visibility: hidden;
+}
+
+.epandable-container ul, .expandable-container li {
+	padding: 5px;
 }
 
 .expandable {
@@ -109,6 +146,8 @@ body {
          -o-transition: transform .4s ease-in-out;
             transition: transform .4s ease-in-out;
     background-color: #fff;
+    margin-top: -10vh;
+    margin-left: -10vw;
 }
 
 .grid {
@@ -142,6 +181,154 @@ body {
 	border-radius: 2px;
 }
 
+.btn-floating img {
+	position: relative;
+	top: 50%;
+	width: 70%;
+	height: 70%;
+	margin: 0;
+	padding: 0;
+	transform: translateY(-50%);
+}
+
+#plus {
+	-webkit-transition: transform .1s ease-in-out;
+         -o-transition: transform .1s ease-in-out;
+            transition: transform .1s ease-in-out;
+}
+
+#fab:hover > #plus{
+	transform: scale(1.3) rotateZ(45deg);
+}
+
+.carousel-container {
+	position: relative;
+	width: 100%;
+	height: 800px !important;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	opacity: 0;
+	visibility: hidden;
+	overflow: hidden; 
+	perspective: 100vw !important;
+	-webkit-transition: opacity .4s ease-in-out, transform .4s ease-in-out;
+         -o-transition: opacity .4s ease-in-out, transform .4s ease-in-out;
+            transition: opacity .4s ease-in-out, transform .4s ease-in-out;
+}
+
+.carousel-container .btn-floating {
+	position: absolute !important;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.carousel-container .carousel {
+	transform: rotateY(20deg);
+	overflow: visible;
+	width: 130.09272%;
+}
+
+.carousel .carousel-item {
+	opacity: 1 !important;
+	margin-bottom: 0;
+}
+
+.carousel .sc {
+	transform: scale(1.5);
+	box-shadow: 5px 5px 50px rgba(0, 0, 0, .2);
+}
+
+.carousel .ic-container {
+	position: relative;
+	transform: translateY(120%);
+}
+
+.carousel .ic {
+	position: relative;
+	width: 30% !important;
+}
+
+.carousel p {
+	position: relative;
+	margin: 0;
+}
+
+.design {
+	margin-top: 3% !important;
+	margin-bottom: 3%;
+	visibility: hidden;
+	opacity: 0;
+	padding-bottom: 3%;
+}
+
+.design .mcontainer {
+	text-align: center;
+}
+
+.design img, .personalization img {
+	width: 100%;
+	height: auto;
+	-webkit-transition: transform .1s ease-in-out;
+         -o-transition: transform .1s ease-in-out;
+            transition: transform .1s ease-in-out;
+}
+
+.design .material-placeholder {
+	width: 100%;
+}
+
+.design img:hover {
+	transform: scale(1.1);
+}
+
+.design .col {
+	height: 50vh !important;
+	overflow: hidden;
+	padding: 3px !important;
+}
+
+.design .row {
+	margin: 0;
+}
+
+.design .image {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+.design .overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: flex-end;
+	width: 100%;
+	height: 30%;
+	padding: 17px;
+	font-size: 24px;
+	background: rgba(0,0,0,0);
+    background: -webkit-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4));
+    background:    -moz-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4));
+    background:      -o-linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4));
+    background:         linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.4));
+    -webkit-transition: padding .2s ease-in-out;
+         -o-transition: padding .2s ease-in-out;
+            transition: padding .2s ease-in-out;
+}
+
+.personalization {
+	width: 100%;
+	-webkit-transition: opacity .4s ease-in-out, transform .4s ease-in-out, margin-top .4s ease-in-out;
+         -o-transition: opacity .4s ease-in-out, transform .4s ease-in-out, margin-top .4s ease-in-out;
+            transition: opacity .4s ease-in-out, transform .4s ease-in-out, margin-top .4s ease-in-out;
+    margin-top: 10%;
+	visibility: hidden;
+	opacity: 0;
+}
+
 @media only screen and (max-width : 640px) {
 	
 	.grid {
@@ -158,6 +345,11 @@ body {
 		width: 100%;
 	}
 
+	.ncontainer {
+		width: 100%;
+		height: 100%;
+	}
+
 	#header {
 		top: 4vh;
 		padding: 5%;
@@ -165,6 +357,14 @@ body {
 
 	.logo {
 		width: 75%;
+	}
+
+	.row {
+		margin: 0;
+	}
+
+	.col {
+		margin: 3px;
 	}
 
 }
