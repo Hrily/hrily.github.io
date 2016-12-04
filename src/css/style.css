@@ -2,7 +2,7 @@ body {
 	margin: 0;
     background-color: #282f57;
     text-align: center;
-    padding-top: 65vh;
+    padding-top: 65%;
 }
 
 .mcontainer {
@@ -27,8 +27,8 @@ body {
 	position: fixed;
 	top: 50%;
 	left: 50%;
-    width: 80vw;
-    height: 80vh;
+    width: 80%;
+    height: 80%;
     max-width: 960px;
     text-align: left;
     -webkit-transform: translate(-50%, -50%);
@@ -94,7 +94,7 @@ body {
 
 #header {
 	position:absolute; 
-	top: 15vh;
+	top: 15%;
 }
 
 #header img, .page-footer img {
@@ -110,7 +110,7 @@ body {
 }
 
 #header h5 {
-	margin-top: 2vh;
+	margin-top: 2%;
 }
 
 .userView .background img {
@@ -283,7 +283,7 @@ body {
 }
 
 .design .col {
-	height: 50vh !important;
+	height: 50% !important;
 	overflow: hidden;
 	padding: 3px !important;
 }
@@ -360,7 +360,7 @@ body {
 	}
 
 	#header {
-		top: 4vh;
+		top: 4%;
 		padding: 5%;
 	}
 
