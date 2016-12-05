@@ -83,9 +83,9 @@ function close_expand(){
 function show(){
 	setTimeout(function(){
 		$('.logo').css({'top': '260px', 'position': 'absolute'});
-		$('.panel').css({'visibility': 'visible'});
+		$('.panel').css('height', '540px')
 		$('nav').css('visibility', 'visible');
-		setTimeout(function(){$('body').css('backgroundColor', '#e9eaed');}, 70);
+		$('body').css('backgroundColor', '#e9eaed');
 		$('#menu-btn').css({'visibility': 'visible', 'opacity': '1'});
 		$('.mcontainer').css({'visibility': 'visible', 'opacity': '1', 'margin-top': '0'});
 		$('.personalization').css({'visibility': 'visible', 'opacity': '1', 'margin-top': '0'});
