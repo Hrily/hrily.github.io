@@ -51,18 +51,19 @@ body {
 }
 
 .panel {
-	display: block;
-	position: absolute;
+	display: inline-block;
+	/*position: absolute;*/
 	z-index: -1;
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	background-color: #282f57;
 	visibility: hidden;
 	-webkit-transition: all .4s ease-in-out;
          -o-transition: all .4s ease-in-out;
             transition: all .4s ease-in-out;
+    margin-bottom: -15%;
 }
 
 .back-panel {
@@ -109,21 +110,20 @@ body {
 }
 
 #welcome {
-	margin-top: 60vh !important;
+	/*margin-top: 60vh !important;*/
 }
 
 #header h5 {
 	margin-top: 2%;
 }
 
-.userView .background img {
-	width: 100%;
+.userView .bacinline-kground img {
+	/*width: 100%;*/
 }
 
 .expandable-container {
 	border-radius: 1px;
-	width: 100%;
-	height: 100%;
+	width !imporvh	height: 100%;
 }
 
 .expandable-container .progress {
