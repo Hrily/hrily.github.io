@@ -34,7 +34,7 @@ function expand_handler(event, repo){
 		panel.style.visibility = 'visible';
 		panel.style.opacity = '0.2';
 		setTimeout(function(){
-			expandable_container.style.backgroundColor = '#fff'
+			expandable_container.style.backgroundColor = '#fff';
 		    expandable_container.style.overflowY = 'scroll';
 		    expandable_container.style.overflowX = 'auto';
 			expandable_container.style.boxShadow = '0 3px 3px rgba(0,0,0,0.3),0 1px 2px rgba(0,0,0,0.24)';

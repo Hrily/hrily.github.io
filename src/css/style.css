@@ -119,7 +119,8 @@ body {
 
 .expandable-container {
 	border-radius: 1px;
-	width !imporvh	height: 100%;
+	height: 100%;
+	width: 100%;
 }
 
 .expandable-container .progress {
