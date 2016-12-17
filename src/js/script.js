@@ -83,7 +83,7 @@ function close_expand(){
 function show(){
 	setTimeout(function(){
 		$('.logo').css({'top': '260px', 'position': 'absolute'});
-		$('.panel').css('height', '540px')
+		$('.panel').css('height', '540px');
 		$('nav').css('visibility', 'visible');
 		$('body').css('backgroundColor', '#e9eaed');
 		$('#menu-btn').css({'visibility': 'visible', 'opacity': '1'});

@@ -72,7 +72,7 @@ body {
 	height: 100%;
 	background-color: #000;
 	opacity: 0;
-	-webkit-transition: opacity .4s ease-in-out;
+	-webkit-transition: opacity .4s ease-in-out;gin
          -o-transition: opacity .4s ease-in-out;
             transition: opacity .4s ease-in-out;
 }
@@ -113,8 +113,9 @@ body {
 	margin-top: 2%;
 }
 
-.userView .bacinline-kground img {
-	/*width: 100%;*/
+.userView .background img {
+	display: inline-block;
+	width: 100%;
 }
 
 .expandable-container {
