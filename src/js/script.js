@@ -82,6 +82,7 @@ function close_expand(){
 
 function show(){
 	setTimeout(function(){
+		$('.side-nav').css({'opacity': '1'})
 		$('.logo').css({'top': '260px', 'position': 'absolute'});
 		$('.panel').css('height', '540px');
 		$('nav').css('visibility', 'visible');

@@ -4,6 +4,10 @@ body {
     text-align: center;
 }
 
+.side-nav {
+	opacity: 0;
+}
+
 .mcontainer {
 	display: inline-block;
     width: 80%;
@@ -107,6 +111,10 @@ body {
 
 #welcome {
 	/*margin-top: 60vh !important;*/
+}
+
+.dp {
+	padding-top: 2% !important;
 }
 
 #header h5 {
@@ -279,7 +287,7 @@ body {
 	width: 100%;
 }
 
-.design img:hover {
+.design .image:hover > .design .image img {
 	transform: scale(1.1);
 }
 
@@ -296,7 +304,7 @@ body {
 .design .image {
 	position: relative;
 	width: 100%;
-	height: 100%;
+	height: 400px;
 	overflow: hidden;
 	text-align: center;
 }
