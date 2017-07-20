@@ -4,11 +4,37 @@
 	<title>Hrily - Personalization</title>
 	<meta name="viewport" content="width=device-width; height=device-height; initial-scale=1; maximum-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<div class="panel"></div>
-	<img class="logo" src="images/codecrazy.png">
+
+	<!-- Scripts and StyleSheets -->
+	<link  rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="src/css/style.css"><script
+	src="https://code.jquery.com/jquery-3.1.1.min.js"
+	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	<script type="text/javascript" src="src/js/script.js"></script>
+
+	<style type="text/css">
+
+		body {
+			margin: 0;
+			background-color: #282f57;
+			text-align: center;
+		}
+
+		main {
+			opacity: 0;
+		}
+
+	</style>
+
 </head>
 <body onload="show()">
 
+	<div class="panel"></div>
+	<img class="logo" src="images/codecrazy.png">
+	
 	<!-- SideNav -->
 	<ul id="slide-out" class="side-nav left-align">
 		<li>
@@ -40,8 +66,9 @@
 	</ul>
 
 	<!-- Nav Icon -->
-	<a href="#" id="menu-btn" data-activates="slide-out" class="button-collapse">
-		<i class="material-icons">menu</i>
+	<a href="#!" id="menu-btn" data-activates="slide-out" class="button-collapse">
+		<i class="material-icons shadow">menu</i>
+		<i class="material-icons ham">menu</i>
 	</a>
 
 	<!-- Header -->
@@ -147,16 +174,6 @@
 			</div>
 		</div>
 	</footer>
-
-	<!-- Scripts and StyleSheets -->
-	<link  rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="src/css/style.css"><script
-	src="https://code.jquery.com/jquery-3.1.1.min.js"
-	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-	crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-	<script type="text/javascript" src="src/js/script.js"></script>
 
 </body>
 </html>

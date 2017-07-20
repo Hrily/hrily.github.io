@@ -2,7 +2,7 @@ function goTo(id) {
 	document.getElementById(id).scrollIntoView({behavior: 'smooth'});
 }
 
-function expand_handler(event, repo){
+function expand_handler(event, repo, user='hrily'){
 	var x = event.clientX - 25;
 	var y = event.clientY - 25;
 	console.log('x '+x+' y '+y);
@@ -41,7 +41,7 @@ function expand_handler(event, repo){
 			expandable.style.zIndex = -1;
 			$('.expandable').hide();
 			progress.style.visibility = 'visible';
-			var readme_uri = 'https://api.github.com/repos/hrily/'+repo+'/contents/README.md';
+			var readme_uri = 'https://api.github.com/repos/' + user + '/' + repo + '/contents/README.md';
 			$.ajax({
 				url: readme_uri,
 				headers: { 
@@ -82,7 +82,8 @@ function close_expand(){
 
 function show(){
 	setTimeout(function(){
-		$('.side-nav').css({'opacity': '1'})
+		$('main').css({'opacity': '1'});
+		$('.side-nav').css({'opacity': '1'});
 		$('.logo').css({'top': '260px', 'position': 'absolute'});
 		$('.panel').css('height', '540px');
 		$('nav').css('visibility', 'visible');

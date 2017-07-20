@@ -4,6 +4,32 @@
 	<title>Hrily</title>
 	<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1">
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<!-- Scripts and StyleSheets -->
+	<link  rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="src/css/style.css">
+	<script
+	src="https://code.jquery.com/jquery-3.1.1.min.js"
+	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+	<script type="text/javascript" src="src/js/script.js"></script>
+
+	<style type="text/css">
+
+		body {
+			margin: 0;
+			background-color: #282f57;
+			text-align: center;
+		}
+
+		main {
+			opacity: 0;
+		}
+
+	</style>
+
 </head>
 <body onload="show()">
 
@@ -42,7 +68,8 @@
 
 	<!-- Nav Links -->
 	<a href="#!" id="menu-btn" data-activates="slide-out" class="button-collapse">
-		<i class="material-icons">menu</i>
+		<i class="material-icons shadow">menu</i>
+		<i class="material-icons ham">menu</i>
 	</a>
 
 	<!-- Header -->
@@ -64,18 +91,20 @@
 	<!--                             Content                             -->
 	<!-- ############################################################### -->
 
+	<main>
+
 	<!-- Welcome Content -->
 	<div id="welcome" class="mcontainer">
 		<div class="card">
 			<div class="card-content">
 				<div class="row">
-					<div class="col s12 m2 l2 dp">
+					<div class="col s12 m2 l2 dp center-align">
 						<img src="images/hrishi_dp.jpg" alt="Hrishi" class="circle responsive-img">
 					</div>
 					<div class="col s12 m10 l10">
 						<h4>Hie :)</h4>
 						<h5 style="opacity: 0.8;">Welcome to my personal website</h5><br>
-						I'm Hrishi Hiraskar and I'm Web and App Developer. This site is the showcase of my work in field of Web Design, App Design, Graphic Design, Programming and Machine Learning. Or you can head over to my <a href="https://hrily.gitHub.io/blob">Blog</a>.
+						I'm Hrishi Hiraskar and I'm Web and App Developer. This site is the showcase of my work in field of Web Design, App Design, Graphic Design, Programming and Machine Learning. Or you can head over to my <a href="https://hrily.gitHub.io/blog">Blog</a>.
 					</div>
 				</div>
 			</div>
@@ -91,21 +120,21 @@
 				<br>
 				<div class="row">
 					<div class="col s12 m4 l4">
-						<a class="btn waves-effect waves-light pink" onclick="expand_handler(event, 'Carousel')">Carousel</a>
-					</div>
-					<div class="col s12 m4 l4">
-						<a class="btn waves-effect waves-light indigo" onclick="expand_handler(event, 'ClassOL')">Class OL</a>
+						<a class="btn waves-effect waves-light pink" onclick="expand_handler(event, 'JekyllAdmin')">Jekyll Admin</a>
 					</div>
 					<div class="col s12 m4 l4">
 						<a class="btn waves-effect waves-light teal" onclick="expand_handler(event, 'MaterialRippleTransition')">Material Ripple Transition</a>
 					</div>
+					<div class="col s12 m4 l4">
+						<a class="btn waves-effect waves-light blue" onclick="expand_handler(event, 'SimOS')">SimOS</a>
+					</div>
 				</div>
 				<div class="row">
 					<div class="col s12 m4 l4">
-						<a class="btn waves-effect waves-light blue" onclick="expand_handler(event, 'ModalEffects')">Modal Effects</a>
+						<a class="btn waves-effect waves-light red" onclick="expand_handler(event, 'MyPage')">My Page</a>
 					</div>
 					<div class="col s12 m4 l4">
-						<a class="btn waves-effect waves-light red" onclick="expand_handler(event, 'MyPage')">My Page</a>
+						<a class="btn waves-effect waves-light indigo" onclick="expand_handler(event, 'RajHousing', 'salman-bhai')">Raj Housing</a>
 					</div>
 					<div class="col s12 m4 l4">
 						<a class="btn waves-effect waves-light blue-grey" onclick="expand_handler(event, 'WORWebsite')">WOR Website</a>
@@ -157,8 +186,15 @@
 			<a class="carousel-item" onclick="expand_handler(event, 'SH')">
 				<img class="sc" src="images/sc_sh.jpg">
 				<div class="ic-container">
-					<img class="ic" src="images/ic_sh.jpg">
+					<img class="ic" src="images/ic_sh.png">
 					<p class="white-text">SH</p>
+				</div>
+			</a>
+			<a class="carousel-item" onclick="expand_handler(event, 'ZBot')">
+				<img class="sc" src="images/sc_zbot.jpg">
+				<div class="ic-container">
+					<img class="ic" src="images/ic_android.png">
+					<p class="white-text">ZBot</p>
 				</div>
 			</a>
 			<a class="carousel-item" onclick="expand_handler(event, 'BlackJack')">
@@ -194,6 +230,13 @@
 				<div class="ic-container">
 					<img class="ic" src="images/ic_sh.png">
 					<p class="white-text">SH</p>
+				</div>
+			</a>
+			<a class="carousel-item" onclick="expand_handler(event, 'ZBot')">
+				<img class="sc" src="images/sc_zbot.jpg">
+				<div class="ic-container">
+					<img class="ic" src="images/ic_android.png">
+					<p class="white-text">ZBot</p>
 				</div>
 			</a>
 		</div>
@@ -277,7 +320,7 @@
 				</div>
 			</div>
 			<div class="col s12 l4 m4">
-				<div class="image valign-wrapper grey lighten-1">
+				<div class="image valign-wrapper grey lighten-2">
 					<img class="materialboxed valign" src="images/ic_notesnearby.png">
 					<span class="overlay white-text">Notes::Nearby</span>
 				</div>
@@ -285,7 +328,7 @@
 		</div>
 		<div class="row">
 			<div class="col s12 l4 m4 valign-wrapper">
-				<div class="image valign-wrapper grey lighten-1">
+				<div class="image valign-wrapper grey lighten-2">
 					<img class="materialboxed valign" src="images/ic_sh.png" style="padding: 20px;">
 					<span class="overlay white-text">SH</span>
 				</div>
@@ -297,6 +340,8 @@
 				</div>
 			</div>
 		</div>
+		<br>
+		<h5 style="opacity: 0.7;">More at <a class="orange-text lighten-2" href="https://hrily.github.io/Design">Design</a></h5>
 	</div></div>
 
 	<!-- Python -->
@@ -306,9 +351,35 @@
 				<h4>&gt;&gt;&gt;Python:</h4>
 				<p style="opacity: 0.8;">import language as easy</p><br>
 				<div class="row">
-					<!-- HandCricket -->
+					<!-- Image Authentication -->
 					<div class="col s12 m6 l6">
 						<div class="card pink small">
+							<div class="card-content white-text">
+								<span class="card-title">Image Authentication</span>
+								<p>Implementation of paper - 'An efficient image authentication method based on Hamming code'</p>
+							</div>
+							<div class="card-action">
+								<a href="#!" onclick="expand_handler(event, 'ImageAuthentication')">View README</a>
+								<a href="https://github.com/Hrily/ImageAuthentication">View on GitHub</a>
+							</div>
+						</div>
+					</div>
+					<!-- Image2Ascii -->
+					<div class="col s12 m6 l6">
+						<div class="card green small">
+							<div class="card-content white-text">
+								<span class="card-title">Image2Ascii</span>
+								<p>Python script to convert image to ascii text</p>
+							</div>
+							<div class="card-action">
+								<a href="#!" onclick="expand_handler(event, 'Python-Image2Ascii')">View README</a>
+								<a href="https://github.com/Hrily/Python-Image2Ascii">View on GitHub</a>
+							</div>
+						</div>
+					</div>
+					<!-- HandCricket -->
+					<div class="col s12 m6 l6">
+						<div class="card purple small">
 							<div class="card-content white-text">
 								<span class="card-title">Game of Life</span>
 								<p>Simulation of Popular Game of Life.</p>
@@ -384,6 +455,9 @@
 				<br>
 				<div class="row">
 					<div class="col s12 m6 l6">
+						<a class="btn waves-effect waves-light indigo" onclick="expand_handler(event, 'LibGraph')">LibGraph</a>
+					</div>
+					<div class="col s12 m6 l6">
 						<a class="btn waves-effect waves-light light-green" onclick="expand_handler(event, 'FightNight')">FightNight</a>
 					</div>
 				</div>
@@ -445,15 +519,7 @@
 		</div>
 	</footer>
 
-	<!-- Scripts and StyleSheets -->
-	<link  rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-	<link rel="stylesheet" type="text/css" href="src/css/style.css"><script
-	src="https://code.jquery.com/jquery-3.1.1.min.js"
-	integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-	crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-	<script type="text/javascript" src="src/js/script.js"></script>
+	</main>
 
 </body>
 </html>
